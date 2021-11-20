@@ -1,0 +1,14 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f3f5f8;
+}
+
+.app {
+  @apply m-auto;
+
+  width: 816px;
+}
