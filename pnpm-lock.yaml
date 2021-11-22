@@ -9,6 +9,7 @@ specifiers:
   postcss-nested: ^5.0.6
   react: ^17.0.0
   react-dom: ^17.0.0
+  react-router: ^6.0.2
   tailwindcss: ^2.2.19
   typescript: ^4.3.2
   vite: ^2.6.4
@@ -19,6 +20,7 @@ dependencies:
   postcss-nested: registry.nlark.com/postcss-nested/5.0.6_postcss@8.3.11
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+  react-router: registry.npmmirror.com/react-router/6.0.2_react@17.0.2
   tailwindcss: registry.npmmirror.com/tailwindcss/2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
 
 devDependencies:
@@ -837,6 +839,12 @@ packages:
       picomatch: registry.nlark.com/picomatch/2.3.0
     dev: false
 
+  registry.nlark.com/regenerator-runtime/0.13.9:
+    resolution: {integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/regenerator-runtime/download/regenerator-runtime-0.13.9.tgz}
+    name: regenerator-runtime
+    version: 0.13.9
+    dev: false
+
   registry.nlark.com/resolve-from/4.0.0:
     resolution: {integrity: sha1-SrzYUq0y3Xuqv+m0DgCjbbXzkuY=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/resolve-from/download/resolve-from-4.0.0.tgz}
     name: resolve-from
@@ -1265,6 +1273,15 @@ packages:
       '@babel/types': registry.npmmirror.com/@babel/types/7.16.0
     dev: true
 
+  registry.npmmirror.com/@babel/runtime/7.16.3:
+    resolution: {integrity: sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/runtime/download/@babel/runtime-7.16.3.tgz?cache=0&sync_timestamp=1636504893793&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.16.3.tgz}
+    name: '@babel/runtime'
+    version: 7.16.3
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
+    dev: false
+
   registry.npmmirror.com/@babel/template/7.16.0:
     resolution: {integrity: sha1-0Wo16/TNdOICCDNW+rId2JNj3dY=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/template/download/@babel/template-7.16.0.tgz?cache=0&sync_timestamp=1635561504531&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Ftemplate%2Fdownload%2F%40babel%2Ftemplate-7.16.0.tgz}
     name: '@babel/template'
@@ -1676,6 +1693,14 @@ packages:
     version: 4.2.8
     dev: false
 
+  registry.npmmirror.com/history/5.1.0:
+    resolution: {integrity: sha1-LpPAnAZBlNONUu1ir9CvydmwHs4=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/history/download/history-5.1.0.tgz}
+    name: history
+    version: 5.1.0
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.3
+    dev: false
+
   registry.npmmirror.com/is-core-module/2.8.0:
     resolution: {integrity: sha1-AyEzbD0JJeSX/Zf12VyxFKXM1Ug=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-core-module/download/is-core-module-2.8.0.tgz}
     name: is-core-module
@@ -1795,6 +1820,18 @@ packages:
     version: 0.10.0
     engines: {node: '>=0.10.0'}
     dev: true
+
+  registry.npmmirror.com/react-router/6.0.2_react@17.0.2:
+    resolution: {integrity: sha512-8/Wm3Ed8t7TuedXjAvV39+c8j0vwrI5qVsYqjFr5WkJjsJpEvNSoLRUbtqSEYzqaTUj1IV+sbPJxvO+accvU0Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router/download/react-router-6.0.2.tgz}
+    id: registry.npmmirror.com/react-router/6.0.2
+    name: react-router
+    version: 6.0.2
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      history: registry.npmmirror.com/history/5.1.0
+      react: registry.npmmirror.com/react/17.0.2
+    dev: false
 
   registry.npmmirror.com/react/17.0.2:
     resolution: {integrity: sha1-0LXMUW0p6z7uOD91tihkz7aAADc=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react/download/react-17.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact%2Fdownload%2Freact-17.0.2.tgz}
