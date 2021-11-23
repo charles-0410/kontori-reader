@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@iconify/react': ^3.1.0
   '@types/react': ^17.0.0
   '@types/react-dom': ^17.0.0
   '@vitejs/plugin-react': ^1.0.0
@@ -16,6 +17,7 @@ specifiers:
   vite: ^2.6.4
 
 dependencies:
+  '@iconify/react': registry.npmmirror.com/@iconify/react/3.1.0
   autoprefixer: registry.npmmirror.com/autoprefixer/10.4.0_postcss@8.3.11
   postcss: registry.npmmirror.com/postcss/8.3.11
   postcss-nested: registry.nlark.com/postcss-nested/5.0.6_postcss@8.3.11
@@ -1324,6 +1326,14 @@ packages:
       to-fast-properties: registry.nlark.com/to-fast-properties/2.0.0
     dev: true
 
+  registry.npmmirror.com/@iconify/react/3.1.0:
+    resolution: {integrity: sha512-RBmYRPgjBukT7/qdUBnj0ZFEEP4plKs8f/ANYrPvnMID+T0VXRc1zKzKWWV9tjR5hw/QpsKSw1fmxfKjSihKHg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify/react/download/@iconify/react-3.1.0.tgz}
+    name: '@iconify/react'
+    version: 3.1.0
+    dependencies:
+      cross-fetch: registry.npmmirror.com/cross-fetch/3.1.4
+    dev: false
+
   registry.npmmirror.com/@types/react-dom/17.0.11:
     resolution: {integrity: sha1-4ercPF6GvbX3aE4AJ0riKOe8xGY=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/download/@types/react-dom-17.0.11.tgz}
     name: '@types/react-dom'
@@ -1419,6 +1429,14 @@ packages:
     name: commander
     version: 6.2.1
     engines: {node: '>= 6'}
+    dev: false
+
+  registry.npmmirror.com/cross-fetch/3.1.4:
+    resolution: {integrity: sha1-lyPzo6JHv4uJA586OAqSROj6Lzk=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cross-fetch/download/cross-fetch-3.1.4.tgz}
+    name: cross-fetch
+    version: 3.1.4
+    dependencies:
+      node-fetch: registry.npmmirror.com/node-fetch/2.6.1
     dev: false
 
   registry.npmmirror.com/debug/4.3.2:
@@ -1744,6 +1762,13 @@ packages:
     version: 3.1.30
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  registry.npmmirror.com/node-fetch/2.6.1:
+    resolution: {integrity: sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-fetch/download/node-fetch-2.6.1.tgz}
+    name: node-fetch
+    version: 2.6.1
+    engines: {node: 4.x || >=6.0.0}
+    dev: false
 
   registry.npmmirror.com/node-releases/2.0.1:
     resolution: {integrity: sha1-PR05XyBPHy8ppUNYuftnh2WtL8U=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-releases/download/node-releases-2.0.1.tgz}
