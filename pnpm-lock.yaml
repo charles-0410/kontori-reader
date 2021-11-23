@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': ^17.0.0
   '@vitejs/plugin-react': ^1.0.0
   autoprefixer: ^10.4.0
+  jotai: ^1.4.4
   postcss: ^8.3.11
   postcss-nested: ^5.0.6
   react: ^17.0.0
@@ -19,6 +20,7 @@ specifiers:
 dependencies:
   '@iconify/react': registry.npmmirror.com/@iconify/react/3.1.0
   autoprefixer: registry.npmmirror.com/autoprefixer/10.4.0_postcss@8.3.11
+  jotai: registry.npmmirror.com/jotai/1.4.4_react@17.0.2
   postcss: registry.npmmirror.com/postcss/8.3.11
   postcss-nested: registry.nlark.com/postcss-nested/5.0.6_postcss@8.3.11
   react: registry.npmmirror.com/react/17.0.2
@@ -1735,6 +1737,46 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: registry.nlark.com/is-extglob/2.1.1
+    dev: false
+
+  registry.npmmirror.com/jotai/1.4.4_react@17.0.2:
+    resolution: {integrity: sha512-LTu++NYHBittzx8FXtzoSva/jTPXZ1I1HLVhINQ1Xe4FKhUqGCRTF+DZFN8a3C+Wq8zPOHRr8kvTGAupFD9SsA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jotai/download/jotai-1.4.4.tgz}
+    id: registry.npmmirror.com/jotai/1.4.4
+    name: jotai
+    version: 1.4.4
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      '@babel/template': '*'
+      '@urql/core': '*'
+      immer: '*'
+      optics-ts: '*'
+      react: '>=16.8'
+      react-query: '*'
+      valtio: '*'
+      wonka: '*'
+      xstate: '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@babel/template':
+        optional: true
+      '@urql/core':
+        optional: true
+      immer:
+        optional: true
+      optics-ts:
+        optional: true
+      react-query:
+        optional: true
+      valtio:
+        optional: true
+      wonka:
+        optional: true
+      xstate:
+        optional: true
+    dependencies:
+      react: registry.npmmirror.com/react/17.0.2
     dev: false
 
   registry.npmmirror.com/lilconfig/2.0.4:
