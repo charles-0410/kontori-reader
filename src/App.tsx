@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Header } from "./components/header";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/home";
 import styles from "./app.module.css";
 
 const App = () => {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className={styles["app"]}>
-      <Header />
-    </div>
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </main>
   );
 };
 
