@@ -16,6 +16,7 @@ specifiers:
   tailwindcss: ^2.2.19
   typescript: ^4.3.2
   vite: ^2.6.4
+  vite-tsconfig-paths: ^3.3.17
 
 dependencies:
   '@iconify/react': registry.npmmirror.com/@iconify/react/3.1.0
@@ -28,6 +29,7 @@ dependencies:
   react-router: registry.npmmirror.com/react-router/6.0.2_react@17.0.2
   react-router-dom: registry.npmmirror.com/react-router-dom/6.0.2_react-dom@17.0.2+react@17.0.2
   tailwindcss: registry.npmmirror.com/tailwindcss/2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
+  vite-tsconfig-paths: registry.npmmirror.com/vite-tsconfig-paths/3.3.17_vite@2.6.14
 
 devDependencies:
   '@types/react': registry.npmmirror.com/@types/react/17.0.34
@@ -94,6 +96,12 @@ packages:
       estree-walker: registry.nlark.com/estree-walker/2.0.2
       picomatch: registry.nlark.com/picomatch/2.3.0
     dev: true
+
+  registry.nlark.com/@types/json5/0.0.29:
+    resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/json5/download/@types/json5-0.0.29.tgz}
+    name: '@types/json5'
+    version: 0.0.29
+    dev: false
 
   registry.nlark.com/@types/parse-json/4.0.0:
     resolution: {integrity: sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz}
@@ -612,6 +620,15 @@ packages:
     version: 2.3.1
     dev: false
 
+  registry.nlark.com/json5/1.0.1:
+    resolution: {integrity: sha1-d5+wAYYE+oVOrL9iUhgNg1Q+Pb4=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/json5/download/json5-1.0.1.tgz}
+    name: json5
+    version: 1.0.1
+    hasBin: true
+    dependencies:
+      minimist: registry.nlark.com/minimist/1.2.5
+    dev: false
+
   registry.nlark.com/json5/2.2.0:
     resolution: {integrity: sha1-Lf7+cgxrpSXZ69kJlQ8FFTFsiaM=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/json5/download/json5-2.2.0.tgz}
     name: json5
@@ -922,12 +939,26 @@ packages:
     hasBin: true
     dev: true
 
+  registry.nlark.com/slash/3.0.0:
+    resolution: {integrity: sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/slash/download/slash-3.0.0.tgz}
+    name: slash
+    version: 3.0.0
+    engines: {node: '>=8'}
+    dev: false
+
   registry.nlark.com/source-map/0.5.7:
     resolution: {integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/source-map/download/source-map-0.5.7.tgz}
     name: source-map
     version: 0.5.7
     engines: {node: '>=0.10.0'}
     dev: true
+
+  registry.nlark.com/strip-bom/3.0.0:
+    resolution: {integrity: sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/strip-bom/download/strip-bom-3.0.0.tgz}
+    name: strip-bom
+    version: 3.0.0
+    engines: {node: '>=4'}
+    dev: false
 
   registry.nlark.com/supports-color/5.5.0:
     resolution: {integrity: sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/supports-color/download/supports-color-5.5.0.tgz}
@@ -969,6 +1000,12 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: registry.nlark.com/is-number/7.0.0
+    dev: false
+
+  registry.nlark.com/tslib/1.14.1:
+    resolution: {integrity: sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tslib/download/tslib-1.14.1.tgz}
+    name: tslib
+    version: 1.14.1
     dev: false
 
   registry.nlark.com/universalify/2.0.0:
@@ -1328,6 +1365,12 @@ packages:
       to-fast-properties: registry.nlark.com/to-fast-properties/2.0.0
     dev: true
 
+  registry.npmmirror.com/@cush/relative/1.0.0:
+    resolution: {integrity: sha1-jNF2m/m947sn2sNWsbyUr0D2zBY=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cush/relative/download/@cush/relative-1.0.0.tgz}
+    name: '@cush/relative'
+    version: 1.0.0
+    dev: false
+
   registry.npmmirror.com/@iconify/react/3.1.0:
     resolution: {integrity: sha512-RBmYRPgjBukT7/qdUBnj0ZFEEP4plKs8f/ANYrPvnMID+T0VXRc1zKzKWWV9tjR5hw/QpsKSw1fmxfKjSihKHg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@iconify/react/download/@iconify/react-3.1.0.tgz}
     name: '@iconify/react'
@@ -1453,7 +1496,6 @@ packages:
         optional: true
     dependencies:
       ms: registry.npmmirror.com/ms/2.1.2
-    dev: true
 
   registry.npmmirror.com/electron-to-chromium/1.3.895:
     resolution: {integrity: sha512-9Ww3fB8CWctjqHwkOt7DQbMZMpal2x2reod+/lU4b9axO1XJEDUpPMBxs7YnjLhhqpKXIIB5SRYN/B4K0QpvyQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/electron-to-chromium/download/electron-to-chromium-1.3.895.tgz?cache=0&sync_timestamp=1636687524939&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Felectron-to-chromium%2Fdownload%2Felectron-to-chromium-1.3.895.tgz}
@@ -1689,6 +1731,12 @@ packages:
       is-glob: registry.npmmirror.com/is-glob/4.0.3
     dev: false
 
+  registry.npmmirror.com/glob-regex/0.3.2:
+    resolution: {integrity: sha1-JzSPL2BkjsMqSlMTcJC5+5NPNCU=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/glob-regex/download/glob-regex-0.3.2.tgz}
+    name: glob-regex
+    version: 0.3.2
+    dev: false
+
   registry.npmmirror.com/glob/7.2.0:
     resolution: {integrity: sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/glob/download/glob-7.2.0.tgz}
     name: glob
@@ -1708,6 +1756,12 @@ packages:
     version: 11.12.0
     engines: {node: '>=4'}
     dev: true
+
+  registry.npmmirror.com/globrex/0.1.2:
+    resolution: {integrity: sha1-3V2eyCYjJzDNZ5Ol4zqTApheYJg=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/globrex/download/globrex-0.1.2.tgz}
+    name: globrex
+    version: 0.1.2
+    dev: false
 
   registry.npmmirror.com/graceful-fs/4.2.8:
     resolution: {integrity: sha1-5BK40z9eAGWTy9PO5t+fLOu+gCo=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/graceful-fs/download/graceful-fs-4.2.8.tgz}
@@ -1796,7 +1850,6 @@ packages:
     resolution: {integrity: sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/download/ms-2.1.2.tgz}
     name: ms
     version: 2.1.2
-    dev: true
 
   registry.npmmirror.com/nanoid/3.1.30:
     resolution: {integrity: sha1-Y/k8xUjSoRPcXfvGO/oJ4rm2Q2I=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nanoid/download/nanoid-3.1.30.tgz}
@@ -1927,6 +1980,17 @@ packages:
       object-assign: registry.nlark.com/object-assign/4.1.1
     dev: false
 
+  registry.npmmirror.com/recrawl-sync/2.2.1:
+    resolution: {integrity: sha1-ywLICEwis86hA6v0a7iHNAdu1rs=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/recrawl-sync/download/recrawl-sync-2.2.1.tgz}
+    name: recrawl-sync
+    version: 2.2.1
+    dependencies:
+      '@cush/relative': registry.npmmirror.com/@cush/relative/1.0.0
+      glob-regex: registry.npmmirror.com/glob-regex/0.3.2
+      slash: registry.nlark.com/slash/3.0.0
+      tslib: registry.nlark.com/tslib/1.14.1
+    dev: false
+
   registry.npmmirror.com/reduce-css-calc/2.1.8:
     resolution: {integrity: sha1-fvh2GijWFJgNwMmC93LJP3qZ3gM=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/reduce-css-calc/download/reduce-css-calc-2.1.8.tgz}
     name: reduce-css-calc
@@ -2018,6 +2082,17 @@ packages:
       - ts-node
     dev: false
 
+  registry.npmmirror.com/tsconfig-paths/3.12.0:
+    resolution: {integrity: sha512-e5adrnOYT6zqVnWqZu7i/BQ3BnhzvGbjEjejFXO20lKIKpwTaupkCPgEfv4GZK1IBciJUEhYs3J3p75FdaTFVg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tsconfig-paths/download/tsconfig-paths-3.12.0.tgz}
+    name: tsconfig-paths
+    version: 3.12.0
+    dependencies:
+      '@types/json5': registry.nlark.com/@types/json5/0.0.29
+      json5: registry.nlark.com/json5/1.0.1
+      minimist: registry.nlark.com/minimist/1.2.5
+      strip-bom: registry.nlark.com/strip-bom/3.0.0
+    dev: false
+
   registry.npmmirror.com/typescript/4.4.4:
     resolution: {integrity: sha1-LNAaGh8WBwTTEB/VpY/w+fy4Aww=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/download/typescript-4.4.4.tgz?cache=0&sync_timestamp=1636875096832&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-4.4.4.tgz}
     name: typescript
@@ -2025,6 +2100,23 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  registry.npmmirror.com/vite-tsconfig-paths/3.3.17_vite@2.6.14:
+    resolution: {integrity: sha1-sUIcSgHmtEa3jMHdEtRfMCvDons=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-tsconfig-paths/download/vite-tsconfig-paths-3.3.17.tgz}
+    id: registry.npmmirror.com/vite-tsconfig-paths/3.3.17
+    name: vite-tsconfig-paths
+    version: 3.3.17
+    peerDependencies:
+      vite: '>2.0.0-0'
+    dependencies:
+      debug: registry.npmmirror.com/debug/4.3.2
+      globrex: registry.npmmirror.com/globrex/0.1.2
+      recrawl-sync: registry.npmmirror.com/recrawl-sync/2.2.1
+      tsconfig-paths: registry.npmmirror.com/tsconfig-paths/3.12.0
+      vite: registry.npmmirror.com/vite/2.6.14
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   registry.npmmirror.com/vite/2.6.14:
     resolution: {integrity: sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/download/vite-2.6.14.tgz}
