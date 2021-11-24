@@ -1,0 +1,33 @@
+.welcome {
+  width: 100%;
+  height: calc(100vh - 72px);
+  overflow: hidden;
+}
+
+.container {
+  @apply flex flex-col align-middle pt-12;
+  @apply w-full text-center;
+
+  font-family: Roboto;
+  font-weight: bold;
+  height: calc(100% - 114px);
+  box-sizing: border-box;
+  > h1 {
+    font-size: 72px;
+    color: #222222;
+    line-height: 84px;
+    margin-bottom: 49px;
+  }
+  > h5 {
+    font-size: 24px;
+    color: #333333;
+    line-height: 28px;
+    margin-bottom: 9px;
+  }
+  > .container-middle {
+    width: 570px;
+    margin-top: 33px;
+    height: 200px;
+    background-color: red;
+  }
+}
