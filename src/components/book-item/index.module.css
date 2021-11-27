@@ -1,0 +1,46 @@
+.root {
+  height: 170px;
+
+  > .image {
+    @apply relative w-full rounded-md overflow-hidden;
+
+    height: 135px;
+
+    &::after {
+      @apply absolute w-full h-full top-0 left-0 z-10;
+
+      content: "";
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+
+    > span {
+      @apply absolute justify-center items-center m-1;
+      @apply font-semibold text-white text-xs text-center;
+
+      padding: 0 10px;
+      background: #ff007a;
+      border-radius: 100vw;
+    }
+
+    > img {
+      @apply w-full object-cover;
+
+      height: 135px;
+    }
+  }
+
+  > .title {
+    @apply w-full text-sm;
+    @apply block box-border px-1 mt-1;
+
+    color: #dadada;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
