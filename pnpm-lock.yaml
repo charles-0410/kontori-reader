@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': ^17.0.0
   '@vitejs/plugin-react': ^1.0.0
   autoprefixer: ^10.4.0
+  clsx: ^1.1.1
   jotai: ^1.4.4
   postcss: ^8.3.11
   postcss-nested: ^5.0.6
@@ -21,6 +22,7 @@ specifiers:
 dependencies:
   '@iconify/react': registry.npmmirror.com/@iconify/react/3.1.0
   autoprefixer: registry.npmmirror.com/autoprefixer/10.4.0_postcss@8.3.11
+  clsx: registry.npmmirror.com/clsx/1.1.1
   jotai: registry.npmmirror.com/jotai/1.4.4_react@17.0.2
   postcss: registry.npmmirror.com/postcss/8.3.11
   postcss-nested: registry.nlark.com/postcss-nested/5.0.6_postcss@8.3.11
@@ -1467,6 +1469,13 @@ packages:
       readdirp: registry.nlark.com/readdirp/3.6.0
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
+    dev: false
+
+  registry.npmmirror.com/clsx/1.1.1:
+    resolution: {integrity: sha1-mLMTT5q73yOyZjSRrOE8XAOnMYg=, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/clsx/download/clsx-1.1.1.tgz}
+    name: clsx
+    version: 1.1.1
+    engines: {node: '>=6'}
     dev: false
 
   registry.npmmirror.com/commander/6.2.1:
