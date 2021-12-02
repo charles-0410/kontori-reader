@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './index.module.css'
 import { Icon } from '@iconify/react'
+import clsx from 'clsx'
 
 export const Nav = () => {
   return (
     <div className={styles['nav']}>
       <div className={styles['nav-container']}>
-        <div className={styles['nav-item']}>
+        <div className={clsx(styles['nav-item'], styles['active'])}>
           <Icon icon="bx:bxs-book-add" fontSize="22" />
           <span>书架</span>
         </div>

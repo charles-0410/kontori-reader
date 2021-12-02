@@ -38,5 +38,46 @@
 
       color: #dadada;
     }
+
+    > .search-box {
+      @apply absolute w-full h-full flex items-center box-border;
+
+      top: 0;
+      left: 0;
+      padding: 10px 15px 10px 12px;
+      background: #333333;
+
+      > .search-close {
+        @apply flex items-center;
+
+        color: #fff;
+        padding-right: 10px;
+      }
+
+      > .search-main {
+        @apply flex h-full items-center;
+
+        flex: 1;
+        background: #dadada;
+        border-radius: 6px;
+        overflow: hidden;
+
+        > .search-icon {
+          color: #666666;
+          padding: 0 8px;
+        }
+
+        > input {
+          @apply h-full;
+
+          flex: 1;
+          color: #666;
+          font-size: 16px;
+          border: none;
+          outline: none;
+          background: #dadada;
+        }
+      }
+    }
   }
 }

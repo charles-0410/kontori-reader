@@ -39,9 +39,11 @@
         font-size: 12px;
         color: #dadada;
       }
-
-      > &.active {
+      &.active {
         color: #ff007a;
+        > span {
+          color: #ff007a;
+        }
       }
     }
   }
