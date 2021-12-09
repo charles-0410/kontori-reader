@@ -2307,6 +2307,7 @@ packages:
       normalize-path: registry.nlark.com/normalize-path/3.0.0
       readdirp: registry.nlark.com/readdirp/3.6.0
     optionalDependencies:
+      fsevents: 2.3.2
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: false
 
