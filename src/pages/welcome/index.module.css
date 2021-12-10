@@ -1,163 +1,155 @@
 .welcome {
   background: #f3f5f8;
-  > .welcome-warp {
+  min-height: 100vh;
+
+  > .welcome-wrap {
     @apply box-border;
 
-    width: 840px;
-    height: 100vh;
-    font-family: Roboto;
-    overflow: hidden;
+    width: 820px;
+    height: 920px;
     background: #f4f4f4;
-    margin: 0 auto;
     border: 1px solid #dadada;
-  }
-}
+    overflow: hidden;
+    margin: 60px auto;
 
-.header {
-  @apply w-full;
+    > .header {
+      @apply w-full flex justify-between items-center box-border;
 
-  > .header-wrap {
-    @apply flex items-center justify-between box-border;
+      padding: 43px 53px 0 53px;
 
-    width: 800px;
-    margin: 0 auto;
-    padding: 43px 52px 15px 52px;
-    > .logo-box {
-      @apply flex items-center;
+      > .header-logo {
+        @apply flex items-center;
 
-      > .logo-icon {
-        @apply flex items-center justify-center;
+        > .logo-icon {
+          @apply flex items-center justify-center;
 
-        width: 42px;
-        height: 42px;
-        background: #333333;
-        border-radius: 50px;
-        color: #fff;
-      }
-      > span {
-        margin-left: 17px;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        color: #222222;
-      }
-    }
-    > .language-box {
-      font-size: 16px;
-      line-height: 19px;
-      color: #222222;
-      > span {
-        font-size: 20px;
-        font-weight: bold;
-      }
-    }
-  }
-}
+          width: 42px;
+          height: 42px;
+          background: #333333;
+          border-radius: 50px;
+          color: #fff;
+        }
 
-.container {
-  @apply flex flex-col align-middle pt-12;
-  @apply w-full relative text-center;
-
-  width: 800px;
-  height: calc(100% - 214px);
-  margin: 0 auto;
-  font-weight: bold;
-  box-sizing: border-box;
-  > h1 {
-    font-size: 72px;
-    color: #222222;
-    line-height: 84px;
-    margin: 0 0 49px 0;
-  }
-  > h5 {
-    font-size: 24px;
-    color: #333333;
-    line-height: 28px;
-    margin: 0 0 9px 0;
-  }
-  > .container-middle {
-    @apply flex;
-
-    width: 640px;
-    margin: 0 auto;
-    margin-top: 22px;
-    > .left-box {
-      @apply w-full relative;
-
-      padding-top: 65px;
-      > .left-box-title {
-        @apply absolute;
-
-        top: 0;
-        left: 0;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        color: #333333;
-      }
-      > .link-list {
-        > .link-item {
-          @apply flex items-center;
-
+        > span {
+          margin-left: 17px;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 28px;
           color: #222222;
-          margin-bottom: 35px;
-          > a {
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 28px;
-            text-decoration: none;
-            color: #222222;
-            margin-left: 13px;
-          }
+        }
+      }
+
+      > .language-box {
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        > span {
+          font-size: 20px;
+          font-weight: bold;
         }
       }
     }
-    > .right-box {
-      color: #222;
-      width: 213px;
-      height: 213px;
-      margin-top: 35px;
-    }
-  }
-  > .container-bottom {
-    @apply flex items-center justify-center;
-    @apply w-full absolute;
 
-    bottom: 35px;
-    height: 21px;
-    color: #999;
-    > .icon {
-      color: #222;
-      padding: 0 6px;
-    }
-  }
-}
+    > .container {
+      @apply flex flex-col items-center;
 
-.footer {
-  @apply relative;
-  z-index: 2;
-  border-top: 1px solid #dadada;
-  background: #f4f4f4;
-  > .footer-wrap {
-    @apply w-full flex items-center justify-between box-border;
-    height: 114px;
-    margin: 0 auto;
-    padding: 0 50px 0 45px;
-    > .icon-box {
-      @apply flex items-center;
-      > .icon-item {
-        color: #222;
-        margin-right: 16px;
+      padding-top: 80px;
+
+      > h1 {
+        font-family: Roboto;
+        font-size: 72px;
+        color: #222222;
+        line-height: 84px;
+        margin: 0 0 49px 0;
+      }
+
+      > h4 {
+        font-family: Roboto;
+        margin: 0 0 9px 0;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 28px;
+      }
+
+      > .download-box {
+        width: 640px;
+        padding-top: 24px;
+
+        > .download-title {
+          font-family: Roboto;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 23px;
+          color: #333333;
+          margin-bottom: 12px;
+        }
+
+        > .download-main {
+          @apply flex items-center;
+
+          > .download-list {
+            flex: 1;
+            padding-top: 34px;
+
+            > .list-item {
+              @apply flex items-center;
+
+              color: #222222;
+              margin-bottom: 35px;
+              > a {
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 28px;
+                text-decoration: none;
+                color: #222222;
+                margin-left: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      > .tips {
+        @apply flex items-center justify-center;
+
+        margin-top: 95px;
+        padding-bottom: 35px;
+        height: 21px;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 18px;
+        color: #999;
+        > .icon {
+          color: #222;
+          padding: 0 6px;
+        }
       }
     }
-    > .text-box {
-      @apply text-right;
 
-      width: 460px;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 21px;
-      color: #333333;
+    > .footer {
+      @apply flex items-center justify-between box-border;
+
+      padding: 37px 51px 35px 45px;
+      border-top: 1px solid #dadada;
+
+      > .icon-box {
+        @apply flex items-center;
+        > .icon-item {
+          color: #222;
+          margin-right: 16px;
+        }
+      }
+      > .text-box {
+        @apply text-right;
+
+        width: 460px;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #333333;
+      }
     }
   }
 }
