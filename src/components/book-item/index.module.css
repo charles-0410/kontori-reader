@@ -1,5 +1,5 @@
 .root {
-  height: 170px;
+  height: 185px;
 
   > .image {
     @apply relative w-full rounded-md overflow-hidden;

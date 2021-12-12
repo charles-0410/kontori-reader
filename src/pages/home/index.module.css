@@ -6,6 +6,6 @@ body {
   @apply grid grid-cols-3;
   @apply w-full overflow-hidden;
 
-  grid-gap: 20px 10px;
+  grid-gap: 10px 10px;
   background: #333;
 }
