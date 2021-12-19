@@ -1,0 +1,29 @@
+.create-btn-wrap {
+  @apply fixed flex rounded-full;
+
+  bottom: 75px;
+  right: 15px;
+  z-index: 10002;
+  width: 60px;
+  height: 60px;
+  background: #ff007a;
+
+  > .option-Panel {
+    @apply absolute bottom-0 right-0 rounded-full;
+
+    width: 60px;
+    height: 60px;
+    background: #ff007a;
+  }
+
+  > .create-btn {
+    @apply absolute bottom-0 right-0 rounded-full;
+    @apply text-center font-bold;
+
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 54px;
+  }
+}
